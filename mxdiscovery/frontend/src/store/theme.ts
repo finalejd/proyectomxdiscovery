@@ -1,5 +1,5 @@
-import { create } from 'zustand';
-import { persist } from 'zustand/middleware'
+import { create } from "zustand";
+import { persist } from "zustand/middleware";
 
 interface DarkModeStore {
   darkMode: boolean;
@@ -13,7 +13,7 @@ export const useDarkMode = create<DarkModeStore>()(
       toggleDarkMode: () => set((state) => ({ darkMode: !state.darkMode })),
     }),
     {
-      name: 'theme', 
+      name: "theme",
     }
   )
-)
+);
