@@ -34,7 +34,6 @@ const EditProductPage = () => {
       setDescription(data.description);
       setCategory(data.category);
       setPrice(data.price);
-      setImage(data.image);
     }
   }, [data]);
 
